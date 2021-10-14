@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tỏ tình</title>
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="love">
+			<h2>Tao <span>thích </span>mày </h2> <img style="width:100px"
+				src="kisspng-love-heart-love-heart-romance-clip-art-picture-of-red-heart-5aaeb718420cb8.8640685015213995762706.png"
+				alt="">
+			<h2>Mày làm bạn gái tao nha</h2>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<button style="position: absolute;">Không</button>
+			<a id="yes" href="yes.html">Tao đồng ý</a>
+		</div>
+	</div>
+</body>
+<script>
+	$('button').on('mouseover', function () {
+		$(this).animate({
+			'top': Math.random() * window.innerHeight + "px",
+			'left': Math.random() * window.innerWidth + "px"
+		}, "medium");
+	})
+</script>
+
+</html>
