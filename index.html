@@ -18,13 +18,22 @@
 				alt="">
 			<h2>Cậu làm bạn gái mình nha</h2>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<button style="position: absolute;">Không</button>
-			<a id="yes" href="yes.html">Mình đồng ý</a>
+			<div>
+				<button style="position: absolute;">Không</button>
+				<a id="yes" href="yes.html">Mình đồng ý</a>
+			</div>
+
 		</div>
 	</div>
 </body>
 <script>
 	$('button').on('mouseover', function () {
+		$(this).animate({
+			'top': Math.random() * window.innerHeight + "px",
+			'left': Math.random() * window.innerWidth + "px"
+		}, "medium");
+	})
+	$('button').click(function () {
 		$(this).animate({
 			'top': Math.random() * window.innerHeight + "px",
 			'left': Math.random() * window.innerWidth + "px"

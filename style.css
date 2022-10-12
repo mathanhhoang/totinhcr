@@ -9,7 +9,7 @@
 	width: 100vw;
 	text-align: center;
 	color: #333;
-	background: pink;
+	background: rgb(195, 238, 252);
 
 }
 .love,
@@ -20,7 +20,7 @@ padding-top: 15%;
 
 
 .love span {
-	color: red;
+	color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -33,29 +33,29 @@ a{
 	text-decoration: none;
 	padding: 10px 20px;
 	margin-top: 20px;
-	border: 3px solid #ddd;
+	border: 3px solid rgb(0, 0, 0);
 	border-radius: 10px;
 }
 
 button{
-	color: red;
+	color: rgb(0, 0, 0);
 	font-size: 24px;
 	text-decoration: none;
 	padding: 10px 40px;
 	margin-top: 50px;
-	border: 3px solid #ddd;
+	border: 3px solid rgb(0, 0, 0);
 	border-radius: 10px;
 }
 
 #no {
-	color: red;
-	background: #eee;
+	color: rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
 	margin-right: 50px;
 }
 
 #yes {
-	color: green;
-	background: #eee;
+	color: rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
 }
 
 .yes img {
