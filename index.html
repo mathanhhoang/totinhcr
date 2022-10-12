@@ -13,10 +13,10 @@
 <body>
 	<div class="container">
 		<div class="love">
-			<h2>Mình <span>thích </span>cậu </h2> <img style="width:100px"
+			<h2>Mình <span>thích </span> <span id="namecr"></span> </h2> <img style="width:100px"
 				src="kisspng-love-heart-love-heart-romance-clip-art-picture-of-red-heart-5aaeb718420cb8.8640685015213995762706.png"
 				alt="">
-			<h2>Cậu làm bạn gái mình nha</h2>
+			<h2><span id="namecr2"></span> làm người yêu mình nha</h2>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<div>
 				<button style="position: absolute;">Không</button>
@@ -27,6 +27,20 @@
 	</div>
 </body>
 <script>
+	window.onload = function () {
+		var url_str = new URL(document.URL);
+		var c = url_str.searchParams.get("name");
+		if(c) {
+			const name = c
+			namecr.textContent = `${name}`
+			namecr2.textContent = `${name}`
+		} else {
+			const name = prompt('Nhập tên crush của bạn');
+			url_str.searchParams.set('name', name)
+			location.href = url_str.toString()
+		}
+	}
+
 	$('button').on('mouseover', function () {
 		$(this).animate({
 			'top': Math.random() * window.innerHeight + "px",
